@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E2001E;
+    height: 100vh;
+}
+
+header{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    place-content: center;
+    align-items: center;
+}
+
+.pesquisa{
+    height: 25%;
+    width: 25%;
+    display: flex;
+    gap: 2%;
+}
+
+.pesquisa input{
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px;
+    font-size: medium;
+}
+
+.lupa{
+    width: 8%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+}
+.lupa img{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    margin-left: 2%;
+    display: flex;
+    gap: 7%;
+    flex-direction: column;
+    height: 75%;
+    width: 98%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 7%;
+    flex-wrap: wrap;
+    height: 70%;
+}
+
+.box-morango{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-banana{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-limao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-abacaxi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-maca{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-blueberry{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+footer{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    place-content: end;
+    align-items: end;
+}
+
+footer img{
+    margin: 15px;
+}
