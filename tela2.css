@@ -27,7 +27,6 @@ header{
 main{
     width: 100%;
     height: 75%;
-    background-color: aliceblue;
     display: flex;
     gap: 10%;
 }
@@ -40,7 +39,6 @@ main{
     gap: 5%;
     margin-left: 10%;
     margin-top: 5%;
-    background-color: bisque;
 }
 
 .fruta img{
@@ -48,7 +46,6 @@ main{
 }
 
 .informacoes{
-    background-color: aqua;
     height: 60%;
     width: 40%;
     display: flex;
@@ -93,6 +90,20 @@ main{
 .genero input{
     width: 90%;
     height: 15%;
+    border-radius: 5px;
+}
+
+.btn-nutricionais button{
+    display: flex;
+    background-color: black;
+    color: white;
+    font-size: large;
+    justify-content: center;
+    align-items: center;
+    width: 110%;
+    height: 30%;
+    padding: 0 20% 0 20%;
+    border: 1px solid white;
     border-radius: 5px;
 }
 
