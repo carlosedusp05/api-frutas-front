@@ -25,6 +25,11 @@ header{
     border-radius: 5px;
 }
 
+.btn-voltar a{
+    color: black;
+    text-decoration: none;
+}
+
 main{
     display: flex;
     height: 75%;
