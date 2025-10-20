@@ -66,23 +66,11 @@ main{
     width: 35%;
 }
 
-.ordem input{
-    width: 90%;
-    height: 15%;
-    border-radius: 5px;
-}
-
 .familia{
     display: flex;
     flex-direction: column;
     font-size: xx-large;
     width: 35%;
-}
-
-.familia input{
-    width: 90%;
-    height: 15%;
-    border-radius: 5px;
 }
 
 .genero{
@@ -92,11 +80,12 @@ main{
     width: 35%;
 }
 
-.genero input{
+.ordem input, .familia input, .genero input{
     width: 90%;
     height: 15%;
     border-radius: 5px;
 }
+
 
 .btn-nutricionais a{
     display: flex;

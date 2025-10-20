@@ -32,14 +32,14 @@ header{
     font-size: medium;
 }
 
-.lupa{
+.btn-lupa{
     width: 8%;
     height: 100%;
     background-color: transparent;
     border: none;
     margin: 0;
 }
-.lupa img{
+.btn-lupa img{
     height: 100%;
     width: 100%;
 }
@@ -54,47 +54,42 @@ main{
 }
 
 .container{
-    display: flex;
-    flex-direction: column;
-    gap: 7%;
-    flex-wrap: wrap;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15%; 
+    width: 70%;
     height: 70%;
+    margin-left: 15%;
+    padding: 20px;
 }
 
-.box-morango{
+.box-strawberry, .box-apple, .box-blueberry, .box-banana, .box-pineapple, .box-lemon{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.box-banana{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.btn-strawberry, .btn-apple, .btn-blueberry, .btn-banana, .btn-pineapple, .btn-lemon{
+    width: 70%;
+    height: 70%;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #E2001E;
+    border: 3px solid #E2001E;
+    transition: border-color 0.3s ease, transform 0.1s ease;
 }
 
-.box-limao{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.btn-strawberry :hover, .btn-apple :hover, .btn-blueberry :hover, .btn-banana :hover, .btn-pineapple :hover, .btn-lemon :hover {
+    border-color: gold; 
+    transform: translateY(-7px); 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.box-abacaxi{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.box-maca{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.box-blueberry{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.btn-strawberry img, .btn-apple img, .btn-blueberry img, .btn-banana img, .btn-pineapple img, .btn-lemon img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 
