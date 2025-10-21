@@ -38,7 +38,14 @@ header{
     background-color: transparent;
     border: none;
     margin: 0;
+    border: 3px solid #E2001E;
+    transition: border-color 0.3s ease, transform 0.1s ease;
 }
+
+.btn-lupa:hover{
+    transform: translateY(-2px); 
+}
+
 .btn-lupa img{
     height: 100%;
     width: 100%;
@@ -79,8 +86,7 @@ main{
     transition: border-color 0.3s ease, transform 0.1s ease;
 }
 
-.btn-strawberry :hover, .btn-apple :hover, .btn-blueberry :hover, .btn-banana :hover, .btn-pineapple :hover, .btn-lemon :hover {
-    border-color: gold; 
+.btn-strawberry :hover, .btn-apple :hover, .btn-blueberry :hover, .btn-banana :hover, .btn-pineapple :hover, .btn-lemon :hover { 
     transform: translateY(-7px); 
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }

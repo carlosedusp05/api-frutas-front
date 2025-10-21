@@ -48,6 +48,10 @@ main{
 
 .fruta img{
     width: 100%;
+    height: 65%;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px;
 }
 
 .informacoes{
@@ -59,21 +63,7 @@ main{
     margin-top: 7%;
 }
 
-.ordem{
-    display: flex;
-    flex-direction: column;
-    font-size: xx-large;
-    width: 35%;
-}
-
-.familia{
-    display: flex;
-    flex-direction: column;
-    font-size: xx-large;
-    width: 35%;
-}
-
-.genero{
+.ordem, .familia, .genero{
     display: flex;
     flex-direction: column;
     font-size: xx-large;
@@ -84,10 +74,17 @@ main{
     width: 90%;
     height: 15%;
     border-radius: 5px;
+    font-size: large;
+    font: bold;
+    padding-left: 5%;
 }
 
+.btn-nutricionais{
+    background-color: #E2001E;
+    transition: border-color 0.3s ease, transform 0.1s ease;
+}
 
-.btn-nutricionais a{
+.btn-nutricionais button{
     display: flex;
     background-color: black;
     color: white;
@@ -100,10 +97,14 @@ main{
     border: 1px solid white;
     border-radius: 5px;
     text-decoration: none;
+    transition: border-color 0.3s ease, transform 0.1s ease;
 }
 
-
-
+.btn-nutricionais button:hover{
+    border-color: gold;
+    transform: translateY(-7px); 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
 
 footer{
     height: 10%;

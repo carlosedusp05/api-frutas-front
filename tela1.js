@@ -15,36 +15,40 @@ async function frutaUrl (fruta) {
 
 async function sugestao(nomeFruta) {
 
-    const urlImagem = await frutaUrl(nomeFruta);
+    const urlImagem = await frutaUrl(nomeFruta)
 
   
-    const frutaBox = document.createElement('div');
-    frutaBox.classList.add(`box-${nomeFruta.toLowerCase()}`);
+    const frutaBox = document.createElement('div')
+    frutaBox.classList.add(`box-${nomeFruta.toLowerCase()}`)
 
-    const btnFruta = document.createElement('button');
-    btnFruta.classList.add(`btn-${nomeFruta.toLowerCase()}`);
+    const btnFruta = document.createElement('button')
+    btnFruta.classList.add(`btn-${nomeFruta.toLowerCase()}`)
 
-    const imgFruta = document.createElement('img');
+    const imgFruta = document.createElement('img')
 
-    imgFruta.src = urlImagem; 
-    imgFruta.alt = nomeFruta;
+    imgFruta.src = urlImagem
+    imgFruta.alt = nomeFruta
 
-    const h2Fruta = document.createElement('h2');
-    h2Fruta.textContent = nomeFruta; 
+    const h2Fruta = document.createElement('h2')
+    h2Fruta.textContent = nomeFruta
 
+    btnFruta.addEventListener('click', () => {
+        localStorage.setItem('valorDaTela1', nomeFruta.toLowerCase())
+        window.location.href = 'tela2.html'
+      })
    
-    container.appendChild(frutaBox);
-    frutaBox.appendChild(btnFruta);
-    btnFruta.appendChild(imgFruta);
-    frutaBox.appendChild(h2Fruta); 
+    container.appendChild(frutaBox)
+    frutaBox.appendChild(btnFruta)
+    btnFruta.appendChild(imgFruta)
+    frutaBox.appendChild(h2Fruta) 
 }
 
-sugestao('strawberry');
-sugestao('blueberry');
-sugestao('lemon');
-sugestao('banana');
-sugestao('pineapple');
-sugestao('apple');
+sugestao('strawberry')
+sugestao('blueberry')
+sugestao('lemon')
+sugestao('banana')
+sugestao('pineapple')
+sugestao('apple')
 
 const pesquisa = document.getElementById('pesquisa')
 const campo = document.createElement('input')
