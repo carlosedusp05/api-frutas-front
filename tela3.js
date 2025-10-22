@@ -33,13 +33,13 @@ async function carregarTela3 () {
 
 
   if (fruta) {
-    const h1Tela3 = document.createElement('h1')
+    const h1Tela2 = document.createElement('h1')
     const imgFruta = document.createElement('img')
 
-    fruta.appendChild(h1Tela3)
+    fruta.appendChild(h1Tela2)
     fruta.appendChild(imgFruta)
 
-    h1Tela3.textContent = valorPesquisa
+    h1Tela2.textContent = valorPesquisa
 
     const urlImagemFruta = await frutaUrl(valorPesquisa)
     imgFruta.src = urlImagemFruta
@@ -50,11 +50,11 @@ async function carregarTela3 () {
   if (infos) {
       const frutaInfo = await frutaDados(valorPesquisa)
 
-      document.getElementById('calorias').value = frutaInfo.nutritions.calories 
-      document.getElementById('acucar').value = frutaInfo.nutritions.sugar
-      document.getElementById('proteina').value = frutaInfo.nutritions.protein
+      document.getElementById('calorias').value = frutaInfo.nutritions.calories
+      document.getElementById('proteinas').value = frutaInfo.nutritions.protein 
+      document.getElementById('acucar').value = frutaInfo.nutritions.sugar 
+      document.getElementById('gordura').value = frutaInfo.nutritions.fat
       document.getElementById('carboidrato').value = frutaInfo.nutritions.carbohydrates 
-      document.getElementById('gordura').value = frutaInfo.nutritions.fat 
     } else{
       alert('Não foi possível carregar as informações da fruta.')
     }
