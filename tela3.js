@@ -10,6 +10,8 @@ async function frutaUrl(fruta) {
 
 async function frutaDados(fruta) {
   const url = `https://www.fruityvice.com/api/fruit/${fruta}`
+
+  // A API nao tinha ou naõ usava cors(),por isso estava dando erro usei IA para ajustar, resolvendo usando essa url 
   const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`
 
   const response = await fetch(proxyUrl)
@@ -51,7 +53,7 @@ async function carregarTela3 () {
       const frutaInfo = await frutaDados(valorPesquisa)
 
       document.getElementById('calorias').value = frutaInfo.nutritions.calories
-      document.getElementById('proteinas').value = frutaInfo.nutritions.protein 
+      document.getElementById('proteina').value = frutaInfo.nutritions.protein 
       document.getElementById('acucar').value = frutaInfo.nutritions.sugar 
       document.getElementById('gordura').value = frutaInfo.nutritions.fat
       document.getElementById('carboidrato').value = frutaInfo.nutritions.carbohydrates 
