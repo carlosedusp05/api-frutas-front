@@ -127,3 +127,56 @@ footer{
 footer img{
     margin: 15px;
 }
+
+@media (max-width: 768px) {
+    
+    .btn-voltar{
+        height: 20%;
+        width: 20%;
+    }
+
+    .fruta img{
+        width: 100%;
+        height: 40%;
+    }
+
+    .informacoes{
+        width: 60%;
+    }
+
+    .ordem input, .familia input, .genero input{
+        width: 100%;
+        height: 35%;
+        font-size: small;
+    }
+
+    .btn-nutricionais button{
+        font-size: smaller;
+        width: 110%;
+        height: 40%;
+    }
+    
+    }
+    
+    @media (max-width: 368px) {
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .fruta img{
+            width: 100%;
+            height: 550%;
+        }
+
+        .btn-nutricionais button{
+            font-size: smaller;
+            width: 80%;
+            height: 50%;
+        }
+
+        .ordem, .familia, .genero{
+            font-size: medium;
+        }
+}
